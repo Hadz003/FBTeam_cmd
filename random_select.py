@@ -17,8 +17,6 @@ def rand_select():
             continue
         check=False
         import random
-        #now we sample
-        #print("ID First Name Last Name APT SET Nationality Position") 
         rand_list=random.sample(players,rand_num)
 
         for i in rand_list:

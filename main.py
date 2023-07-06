@@ -36,6 +36,5 @@ while num !=0:
     elif num==8:
         from lowest_avg import lowest_AVG
         lowest_AVG()
-
 print("GoodBye!")
 

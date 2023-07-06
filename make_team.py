@@ -37,10 +37,16 @@ def team_select():
             print("Not enough attackers available")
             continue
         check=False
-        #print("ID First Name Last Name APT SET Nationality Position")
+
+        sorted_defence=sorted( Defenders, key=lambda player: player.SET, reverse=True)
+        sorted_mid=sorted( Midfielders, key=lambda player: player.SET, reverse=True)
+        sorted_attack=sorted( Attackers, key=lambda player: player.SET, reverse=True)
+
+
         for i in range(num_of_def):
-            print(Defenders[i])
+            print(sorted_defence[i])
         for i in range(num_of_mid):
-            print(Midfielders[i])
+            print(sorted_mid[i])
         for i in range(num_of_attack):
-            print(Attackers[i])
+            print(sorted_attack[i])
+        

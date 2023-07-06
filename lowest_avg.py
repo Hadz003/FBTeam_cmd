@@ -7,5 +7,4 @@ def lowest_AVG():
         if Average(players[i])<counter:
             counter=Average(players[i])
             found=str(players[i])
-    #print("ID First Name Last Name APT SET Nationality Position")
     print (found)
