@@ -58,13 +58,6 @@ def new_player():
         else:
             print("Invalid Country")
             na=input("Enter the player's Nationality: ")
-    check=True
-    while check==True:
-        for i in players:
-            if i.first_name==new_player.first_name and i.last_name==new_player.last_name:
-                print("Player already added")
-                check=False
-                break
 
     Position=input("Enter the player's position: ")
     while not isinstance(Position, str):
